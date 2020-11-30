@@ -1,0 +1,125 @@
+.nav {
+  opacity: 0.5;
+}
+
+.header {
+  height: 100%;
+  background-image: url("assets/explore.jpg");
+}
+
+.header h1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 100px;
+  text-align: center;
+}
+
+.bg1,
+.bg2,
+.bg3,
+.bg4,
+.bg5,
+.bg6,
+.bg7,
+.bg8,
+.bg9,
+.bg10 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg1 {
+  background-image: url("assets/culture.jpg");
+  min-height: 100%;
+}
+
+.bg2 {
+  background-image: url("assets/river.jpg");
+  min-height: 100%;
+}
+
+.bg3 {
+  background-image: url("assets/backwater.jpg");
+  min-height: 100%;
+}
+
+.bg4 {
+  background-image: url("assets/beach.jpg");
+  min-height: 100%;
+}
+
+.bg5 {
+  background-image: url("assets/mountain.jpg");
+  min-height: 100%;
+}
+
+.bg6 {
+  background-image: url("assets/forest.jpg");
+  min-height: 100%;
+}
+
+.bg7 {
+  background-image: url("assets/waterfall.jpg");
+  min-height: 100%;
+}
+
+.bg8 {
+  background-image: url("assets/wildlife.jpg");
+  min-height: 100%;
+}
+
+.bg9 {
+  background-image: url("assets/sculpt.jpg");
+  min-height: 100%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.card {
+  font-size: 45px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.site-footer {
+  height: 100px;
+  background-color: black;
+  box-shadow: 0 50vh 0 50vh rgba(0, 0, 0, 1);
+  vertical-align: sub;
+}
+
+.site-footer p {
+  text-align: center;
+  color: white;
+}
+
+div.form {
+  display: block;
+  text-align: center;
+  color: white;
+}
+
+form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.alert {
+  text-align: center;
+  display: none;
+}
+ h4{
+    color: white";
+ }
