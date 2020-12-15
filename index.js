@@ -1,4 +1,4 @@
-var messagesRef = firebase.database().ref("New Registrations");
+var messagesRef = firebase.database().ref("New Subscription");
 
 // Listen for form submit
 document.getElementById("register").addEventListener("submit", submitForm);
