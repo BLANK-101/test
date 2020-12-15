@@ -8,29 +8,25 @@ function submitForm(e) {
   e.preventDefault();
 
   // Get values
-  var email = getInputVal("email");
+  var email = document.getElementById(id).value;
 
   // Save message
   saveMessage(email);
 
   // Show alert
-  document.querySelector(".alert").style.display = "block";
+  document.querySelector("alert").style.display = "block";
 
   // Hide alert after 3 seconds
   setTimeout(function () {
-    document.querySelector(".alert").style.display = "none";
+    document.querySelector("alert").style.display = "none";
   }, 3000);
 
   // Clear form
   document.getElementById("register").reset();
 }
 
-function getInputVal(id) {
-  return document.getElementById(id).value;
-}
-
 // Save message to firebase
-function saveMessage(name, email, phone, status) {
+function saveMessage(email) {
   var newMessageRef = messagesRef.push();
   newMessageRef.set({
     email: email,
