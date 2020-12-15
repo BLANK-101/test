@@ -2,9 +2,14 @@
   opacity: 0.5;
 }
 
+body{
+  background-color: black;
+}
+
 .header {
   height: 100%;
   background-image: url("assets/explore.jpg");
+  background-size: cover;
 }
 
 .header h1 {
@@ -14,6 +19,15 @@
   color: white;
   font-size: 100px;
   text-align: center;
+}
+
+.box{
+  padding: 20px;
+  margin-left: 30px;
+
+  border: 10px ;
+  display:inline;
+  position: relative;
 }
 
 .bg1,
