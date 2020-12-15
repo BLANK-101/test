@@ -18,33 +18,6 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="index.css" />
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
-
-    <script>
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      var firebaseConfig = {
-        apiKey: "AIzaSyDe7anCx-uBfNwY_K4RBzZnJUT-u2v2BbY",
-        authDomain: "kerala-tourism-72db0.firebaseapp.com",
-        databaseURL: "https://kerala-tourism-72db0.firebaseio.com",
-        projectId: "kerala-tourism-72db0",
-        storageBucket: "kerala-tourism-72db0.appspot.com",
-        messagingSenderId: "12297400166",
-        appId: "1:12297400166:web:49f6c4ee5c8f2060fba2a7",
-        measurementId: "G-ECNYCD1XC9",
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-    </script>
-    <script
-      scr="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"
-    ></script>
   </head>
 
   <body>
@@ -168,9 +141,8 @@
                 <input
                   type="email"
                   class="form-control"
-                  name="email"
                   id="email"
-                  value="Your Email"
+                  placeholder="Your Email"
                 />
               </div>
               <div class="col-sm-2">
@@ -193,6 +165,14 @@
       </div>
       <br />
     </footer>
-    <script src="index.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
+    <script
+    scr="https://www.gstatic.com/firebasejs/8.2.0/firebase-database.js"
+    ></script>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
+  
+     

@@ -1,34 +1,22 @@
-var messagesRef = firebase.database().ref("New Subscription");
+var firebaseConfig = {
+  apiKey: "AIzaSyDe7anCx-uBfNwY_K4RBzZnJUT-u2v2BbY",
+  authDomain: "kerala-tourism-72db0.firebaseapp.com",
+  databaseURL: "https://kerala-tourism-72db0.firebaseio.com",
+  projectId: "kerala-tourism-72db0",
+  storageBucket: "kerala-tourism-72db0.appspot.com",
+  messagingSenderId: "12297400166",
+  appId: "1:12297400166:web:49f6c4ee5c8f2060fba2a7",
+  measurementId: "G-ECNYCD1XC9",
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
-// Listen for form submit
-document.getElementById("register").addEventListener("submit", submitForm);
-
-// Submit form
-function submitForm(e) {
+var refdb = firebase.database().ref("New Subscriptions");
+document.getElementById("register").addEventListener("submit", submitfn);
+function submitfn(e) {
   e.preventDefault();
-
-  // Get values
-  var email = document.getElementById(id).value;
-
-  // Save message
-  saveMessage(email);
-
-  // Show alert
-  document.querySelector("alert").style.display = "block";
-
-  // Hide alert after 3 seconds
-  setTimeout(function () {
-    document.querySelector("alert").style.display = "none";
-  }, 3000);
-
-  // Clear form
-  document.getElementById("register").reset();
-}
-
-// Save message to firebase
-function saveMessage(email) {
-  var newMessageRef = messagesRef.push();
-  newMessageRef.set({
-    email: email,
-  });
+  var info = refdb.push();
+  var em = document.getElementById(email).value;
+  info.set({ email: em });
+  alert("yes");
 }
