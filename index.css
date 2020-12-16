@@ -1,34 +1,31 @@
+@media (max-width: 991px) {
+  .latest-posted-tasks-big {
+    text-align: center;
+  }
+  .latest-posted-tasks-big > * {
+    text-align: initial;
+  }
+  .latest-posted-tasks-big > .grid_task {
+    display: inline-block;
+    float: none;
+  }
+}
+
 .nav {
   opacity: 0.5;
-  
-  @-ms-viewport{
-    zoom: 1.0;
-    width: extend-to-zoom;
-  }
-  
 }
 
 body{
   background-color: black;
-
-  @-ms-viewport{
-    zoom: 1.0;
-    width: extend-to-zoom;
-  }
 }
 
-.header {
+.wrapper {
   height: 100%;
   background-image: url("assets/explore.jpg");
   background-size: cover;
-
-  @-ms-viewport{
-    zoom: 1.0;
-    width: extend-to-zoom;
-  }
 }
 
-.header h1 {
+.wrapper h1 {
   display: inline-block;
   vertical-align: middle;
   margin: auto;
@@ -113,7 +110,7 @@ body{
   min-height: 100%;
 }
 
-.caption {
+.caption , #title {
   position: absolute;
   left: 0;
   top: 50%;
