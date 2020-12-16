@@ -14,8 +14,7 @@ body{
 
 .header h1 {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   color: white;
   font-size: 100px;
   text-align: center;
@@ -130,7 +129,7 @@ body{
   text-align: left;
 }
 
-.alert {
+#alert {
   text-align: center;
   display: none;
 }

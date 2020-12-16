@@ -11,12 +11,32 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-var refdb = firebase.database().ref("New Subscriptions");
-document.getElementById("register").addEventListener("submit", submitfn);
-function submitfn(e) {
+// database reference
+var refdb = firebase.database().ref("Subscriptions");
+
+// button submission listener
+document.getElementById("register").addEventListener("submit", send);
+
+function send(e) {
   e.preventDefault();
-  var info = refdb.push();
-  var em = document.getElementById(email).value;
-  info.set({ email: em });
-  alert("yes");
+
+  var mail = document.getElementById("email").value;
+
+  //pass value to database
+  sendinfo(mail);
+
+  function sendinfo(m) {
+    refdb.set({ Email: m });
+  }
+
+  // Show alert
+  document.getElementById("alert").style.display = "block";
+
+  // Hide alert after 3 seconds
+  setTimeout(function () {
+    document.getElementById("alert").style.display = "none";
+  }, 3000);
+
+  // Clear form
+  document.getElementById("register").reset();
 }
