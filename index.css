@@ -1,19 +1,36 @@
 .nav {
   opacity: 0.5;
+  
+  @-ms-viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+  }
+  
 }
 
 body{
   background-color: black;
+
+  @-ms-viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+  }
 }
 
 .header {
   height: 100%;
   background-image: url("assets/explore.jpg");
   background-size: cover;
+
+  @-ms-viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+  }
 }
 
 .header h1 {
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   margin: auto;
   color: white;
   font-size: 100px;
@@ -22,11 +39,16 @@ body{
 
 .box{
   padding: 20px;
-  margin-left: 30px;
-
+  margin-left: auto;
+  margin-right: auto;
   border: 10px ;
   display:inline;
   position: relative;
+
+  @-ms-viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+  }
 }
 
 .bg1,
