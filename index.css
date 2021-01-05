@@ -19,13 +19,13 @@ body{
   background-color: black;
 }
 
-.wrapper {
+#wrapper {
   height: 100%;
   background-image: url("assets/explore.jpg");
   background-size: cover;
 }
 
-.wrapper h1 {
+#wrapper h1 {
   display: inline-block;
   vertical-align: middle;
   margin: auto;
